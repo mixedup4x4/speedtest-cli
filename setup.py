@@ -19,6 +19,11 @@ import os
 import re
 import codecs
 
+from distutils.core import setup
+import py2exe
+
+setup(console=['speedtest_cli.py'])
+
 from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
